@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftKeyImporterPlugin", "MicrosoftKeyImporterPlugin\MicrosoftKeyImporterPlugin.csproj", "{15B015DE-7145-45FA-93EE-2ED240678F85}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSDNSubscriptionKeyImporterPlugin", "MSDNSubscriptionKeyImporterPlugin\MSDNSubscriptionKeyImporterPlugin.csproj", "{15B015DE-7145-45FA-93EE-2ED240678F85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
