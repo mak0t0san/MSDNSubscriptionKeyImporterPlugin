@@ -54,20 +54,22 @@
             {
                 if (!GroupContainsKeyAsPassword(productGroup, key))
                 {
-                    AddKey(database, productGroup, key);
+                    AddKey(database, productGroup, product, key);
                 }
             }
         }
 
-        private static void AddKey(PwDatabase database, PwGroup group, rootYourKeyProduct_KeyKey key)
+        private static void AddKey(PwDatabase database, PwGroup group,rootYourKeyProduct_Key product, rootYourKeyProduct_KeyKey key)
         {
             var entry = new PwEntry(true, true);
 
             group.AddEntry(entry, true);
 
+            string note = (string.IsNullOrEmpty(key.ClaimedDate) ? "" : $"Claimed on : {key.ClaimedDate}\n\n") + 
+                product.KeyRetrievalNote;
             entry.Strings.Set(PwDefs.TitleField, new ProtectedString(database.MemoryProtection.ProtectTitle, key.Type));
             entry.Strings.Set(PwDefs.PasswordField, new ProtectedString(database.MemoryProtection.ProtectPassword, key.Value));
-            entry.Strings.Set(PwDefs.NotesField, new ProtectedString(database.MemoryProtection.ProtectNotes, key.ClaimedDate));
+            entry.Strings.Set(PwDefs.NotesField, new ProtectedString(database.MemoryProtection.ProtectNotes, note));
         }
 
         private static bool GroupContainsKeyAsPassword(PwGroup group, rootYourKeyProduct_KeyKey key)
