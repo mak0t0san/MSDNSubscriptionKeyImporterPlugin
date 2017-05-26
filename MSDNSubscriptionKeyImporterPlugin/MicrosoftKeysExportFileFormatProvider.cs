@@ -52,20 +52,22 @@
 
             foreach (rootYourKeyProduct_KeyKey key in product.Key)
             {
-                if (!GroupContainsKeyAsPassword(productGroup, key))
+                int keyId;
+                int.TryParse(key.ID, out keyId);
+                if (!GroupContainsKeyAsPassword(productGroup, key) && keyId > 0)
                 {
                     AddKey(database, productGroup, product, key);
                 }
             }
         }
 
-        private static void AddKey(PwDatabase database, PwGroup group,rootYourKeyProduct_Key product, rootYourKeyProduct_KeyKey key)
+        private static void AddKey(PwDatabase database, PwGroup group, rootYourKeyProduct_Key product, rootYourKeyProduct_KeyKey key)
         {
             var entry = new PwEntry(true, true);
 
             group.AddEntry(entry, true);
 
-            string note = (string.IsNullOrEmpty(key.ClaimedDate) ? "" : $"Claimed on : {key.ClaimedDate}\n\n") + 
+            string note = (string.IsNullOrEmpty(key.ClaimedDate) ? "" : $"Claimed on : {key.ClaimedDate}\n\n") +
                 product.KeyRetrievalNote;
             entry.Strings.Set(PwDefs.TitleField, new ProtectedString(database.MemoryProtection.ProtectTitle, key.Type));
             entry.Strings.Set(PwDefs.PasswordField, new ProtectedString(database.MemoryProtection.ProtectPassword, key.Value));
