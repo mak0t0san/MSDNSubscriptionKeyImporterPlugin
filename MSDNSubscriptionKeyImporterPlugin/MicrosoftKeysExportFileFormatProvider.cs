@@ -48,13 +48,25 @@
 
         private static void AddProduct(PwDatabase database, PwGroup group, rootYourKeyProduct_Key product)
         {
+            var hasKeys = false;
+            foreach (rootYourKeyProduct_KeyKey key in product.Key)
+            {
+                if (key.ID > 0)
+                {
+                    hasKeys = true;
+                }
+            }
+
+            if (!hasKeys)
+            {
+                return;                
+            }
+
             PwGroup productGroup = group.FindCreateGroup(product.Name, true);
 
             foreach (rootYourKeyProduct_KeyKey key in product.Key)
             {
-                int keyId;
-                int.TryParse(key.ID, out keyId);
-                if (!GroupContainsKeyAsPassword(productGroup, key) && keyId > 0)
+                if (!GroupContainsKeyAsPassword(productGroup, key) && key.ID > 0)
                 {
                     AddKey(database, productGroup, product, key);
                 }

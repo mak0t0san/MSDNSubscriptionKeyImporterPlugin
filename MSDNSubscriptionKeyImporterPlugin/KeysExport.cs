@@ -117,7 +117,7 @@ public partial class rootYourKeyProduct_Key {
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
 public partial class rootYourKeyProduct_KeyKey {
     
-    private string idField;
+    private int idField;
     
     private string typeField;
     
@@ -125,9 +125,14 @@ public partial class rootYourKeyProduct_KeyKey {
     
     private string valueField;
     
+    public rootYourKeyProduct_KeyKey() {
+        this.idField = 0;
+    }
+    
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public string ID {
+    [System.ComponentModel.DefaultValueAttribute(0)]
+    public int ID {
         get {
             return this.idField;
         }

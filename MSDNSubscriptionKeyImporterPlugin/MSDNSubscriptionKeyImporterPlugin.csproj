@@ -41,10 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeysExport.cs" />
+    <Compile Include="KeysExport.cs">
+      <DependentUpon>KeysExport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MSDNSubscriptionKeyImporterPluginExt.cs" />
     <Compile Include="MicrosoftKeysExportFileFormatProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KeysExport.xsc">
+      <DependentUpon>KeysExport.xsd</DependentUpon>
+    </None>
+    <None Include="KeysExport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KeysExport.xss">
+      <DependentUpon>KeysExport.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

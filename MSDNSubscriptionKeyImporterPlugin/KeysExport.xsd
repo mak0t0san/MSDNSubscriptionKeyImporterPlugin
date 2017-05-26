@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="root" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="root" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="root" msprop:Generator_UserDSName="root">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="YourSubscription" msprop:Generator_TableClassName="YourSubscriptionDataTable" msprop:Generator_TableVarName="tableYourSubscription" msprop:Generator_TablePropName="YourSubscription" msprop:Generator_RowDeletingName="YourSubscriptionRowDeleting" msprop:Generator_RowChangingName="YourSubscriptionRowChanging" msprop:Generator_RowEvHandlerName="YourSubscriptionRowChangeEventHandler" msprop:Generator_RowDeletedName="YourSubscriptionRowDeleted" msprop:Generator_UserTableName="YourSubscription" msprop:Generator_RowChangedName="YourSubscriptionRowChanged" msprop:Generator_RowEvArgName="YourSubscriptionRowChangeEvent" msprop:Generator_RowClassName="YourSubscriptionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Subscription" msprop:Generator_TableClassName="SubscriptionDataTable" msprop:Generator_TableVarName="tableSubscription" msprop:Generator_TablePropName="Subscription" msprop:Generator_RowDeletingName="SubscriptionRowDeleting" msprop:Generator_RowChangingName="SubscriptionRowChanging" msprop:Generator_RowEvHandlerName="SubscriptionRowChangeEventHandler" msprop:Generator_RowDeletedName="SubscriptionRowDeleted" msprop:Generator_UserTableName="Subscription" msprop:Generator_RowChangedName="SubscriptionRowChanged" msprop:Generator_RowEvArgName="SubscriptionRowChangeEvent" msprop:Generator_RowClassName="SubscriptionRow" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SubscriptionGuid" msprop:Generator_ColumnVarNameInTable="columnSubscriptionGuid" msprop:Generator_ColumnPropNameInRow="SubscriptionGuid" msprop:Generator_ColumnPropNameInTable="SubscriptionGuidColumn" msprop:Generator_UserColumnName="SubscriptionGuid" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                  </xs:sequence>
+                  <xs:attribute name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+                  <xs:attribute name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" />
+                  <xs:attribute name="YourSubscription_Id" msprop:Generator_ColumnVarNameInTable="columnYourSubscription_Id" msprop:Generator_ColumnPropNameInRow="YourSubscription_Id" msprop:Generator_ColumnPropNameInTable="YourSubscription_IdColumn" msprop:Generator_UserColumnName="YourSubscription_Id" type="xs:int" use="prohibited" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="YourSubscription_Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnYourSubscription_Id" msprop:Generator_ColumnPropNameInRow="YourSubscription_Id" msprop:Generator_ColumnPropNameInTable="YourSubscription_IdColumn" msprop:Generator_UserColumnName="YourSubscription_Id" type="xs:int" msdata:AllowDBNull="false" use="prohibited" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="YourKey" msprop:Generator_TableClassName="YourKeyDataTable" msprop:Generator_TableVarName="tableYourKey" msprop:Generator_TablePropName="YourKey" msprop:Generator_RowDeletingName="YourKeyRowDeleting" msprop:Generator_RowChangingName="YourKeyRowChanging" msprop:Generator_RowEvHandlerName="YourKeyRowChangeEventHandler" msprop:Generator_RowDeletedName="YourKeyRowDeleted" msprop:Generator_UserTableName="YourKey" msprop:Generator_RowChangedName="YourKeyRowChanged" msprop:Generator_RowEvArgName="YourKeyRowChangeEvent" msprop:Generator_RowClassName="YourKeyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product_Key" msprop:Generator_TableClassName="Product_KeyDataTable" msprop:Generator_TableVarName="tableProduct_Key" msprop:Generator_TablePropName="Product_Key" msprop:Generator_RowDeletingName="Product_KeyRowDeleting" msprop:Generator_RowChangingName="Product_KeyRowChanging" msprop:Generator_RowEvHandlerName="Product_KeyRowChangeEventHandler" msprop:Generator_RowDeletedName="Product_KeyRowDeleted" msprop:Generator_UserTableName="Product_Key" msprop:Generator_RowChangedName="Product_KeyRowChanged" msprop:Generator_RowEvArgName="Product_KeyRowChangeEvent" msprop:Generator_RowClassName="Product_KeyRow" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Key" nillable="true" msprop:Generator_TableClassName="KeyDataTable" msprop:Generator_TableVarName="tableKey" msprop:Generator_TablePropName="Key" msprop:Generator_RowDeletingName="KeyRowDeleting" msprop:Generator_RowChangingName="KeyRowChanging" msprop:Generator_RowEvHandlerName="KeyRowChangeEventHandler" msprop:Generator_RowDeletedName="KeyRowDeleted" msprop:Generator_UserTableName="Key" msprop:Generator_RowChangedName="KeyRowChanged" msprop:Generator_RowEvArgName="KeyRowChangeEvent" msprop:Generator_RowClassName="KeyRow" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent msprop:Generator_ColumnVarNameInTable="columnKey_Text" msprop:Generator_ColumnPropNameInRow="Key_Text" msprop:Generator_ColumnPropNameInTable="Key_TextColumn" msprop:Generator_UserColumnName="Key_Text" msdata:ColumnName="Key_Text" msdata:Ordinal="3">
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" default="0" />
+                            <xs:attribute name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" />
+                            <xs:attribute name="ClaimedDate" msprop:Generator_ColumnVarNameInTable="columnClaimedDate" msprop:Generator_ColumnPropNameInRow="ClaimedDate" msprop:Generator_ColumnPropNameInTable="ClaimedDateColumn" msprop:Generator_UserColumnName="ClaimedDate" type="xs:string" />
+                            <xs:attribute name="Product_Key_Id" msprop:Generator_ColumnVarNameInTable="columnProduct_Key_Id" msprop:Generator_ColumnPropNameInRow="Product_Key_Id" msprop:Generator_ColumnPropNameInTable="Product_Key_IdColumn" msprop:Generator_UserColumnName="Product_Key_Id" type="xs:int" use="prohibited" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+                  <xs:attribute name="KeyRetrievalNote" msprop:Generator_ColumnVarNameInTable="columnKeyRetrievalNote" msprop:Generator_ColumnPropNameInRow="KeyRetrievalNote" msprop:Generator_ColumnPropNameInTable="KeyRetrievalNoteColumn" msprop:Generator_UserColumnName="KeyRetrievalNote" type="xs:string" />
+                  <xs:attribute name="Product_Key_Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnProduct_Key_Id" msprop:Generator_ColumnPropNameInRow="Product_Key_Id" msprop:Generator_ColumnPropNameInTable="Product_Key_IdColumn" msprop:Generator_UserColumnName="Product_Key_Id" type="xs:int" msdata:AllowDBNull="false" use="prohibited" />
+                  <xs:attribute name="YourKey_Id" msprop:Generator_ColumnVarNameInTable="columnYourKey_Id" msprop:Generator_ColumnPropNameInRow="YourKey_Id" msprop:Generator_ColumnPropNameInTable="YourKey_IdColumn" msprop:Generator_UserColumnName="YourKey_Id" type="xs:int" use="prohibited" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="YourKey_Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnYourKey_Id" msprop:Generator_ColumnPropNameInRow="YourKey_Id" msprop:Generator_ColumnPropNameInTable="YourKey_IdColumn" msprop:Generator_UserColumnName="YourKey_Id" type="xs:int" msdata:AllowDBNull="false" use="prohibited" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//YourSubscription" />
+      <xs:field xpath="@YourSubscription_Id" />
+    </xs:unique>
+    <xs:unique name="Product_Key_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Product_Key" />
+      <xs:field xpath="@Product_Key_Id" />
+    </xs:unique>
+    <xs:unique name="YourKey_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//YourKey" />
+      <xs:field xpath="@YourKey_Id" />
+    </xs:unique>
+    <xs:keyref name="YourKey_Product_Key" refer="YourKey_Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="Product_Key" msprop:rel_Generator_ChildPropName="GetProduct_KeyRows" msprop:rel_Generator_UserRelationName="YourKey_Product_Key" msprop:rel_Generator_ParentPropName="YourKeyRow" msprop:rel_Generator_RelationVarName="relationYourKey_Product_Key" msprop:rel_Generator_UserParentTable="YourKey">
+      <xs:selector xpath=".//Product_Key" />
+      <xs:field xpath="@YourKey_Id" />
+    </xs:keyref>
+    <xs:keyref name="Product_Key_Key" refer="Product_Key_Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="Key" msprop:rel_Generator_ChildPropName="GetKeyRows" msprop:rel_Generator_UserRelationName="Product_Key_Key" msprop:rel_Generator_ParentPropName="Product_KeyRow" msprop:rel_Generator_RelationVarName="relationProduct_Key_Key" msprop:rel_Generator_UserParentTable="Product_Key">
+      <xs:selector xpath=".//Key" />
+      <xs:field xpath="@Product_Key_Id" />
+    </xs:keyref>
+    <xs:keyref name="YourSubscription_Subscription" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="Subscription" msprop:rel_Generator_ChildPropName="GetSubscriptionRows" msprop:rel_Generator_UserRelationName="YourSubscription_Subscription" msprop:rel_Generator_ParentPropName="YourSubscriptionRow" msprop:rel_Generator_RelationVarName="relationYourSubscription_Subscription" msprop:rel_Generator_UserParentTable="YourSubscription">
+      <xs:selector xpath=".//Subscription" />
+      <xs:field xpath="@YourSubscription_Id" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
